@@ -1,0 +1,47 @@
+.window {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 9px 19px 0px rgba(50, 50, 50, 0.5);
+
+
+  &__header {
+    background: $grey;
+    display: flex;
+    padding: 2% 5%;
+  }
+  &__menu {
+
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  &__search {
+    background-color: #fff;
+    border-radius: 10px;
+    flex-grow: 44;
+  }
+  &__item {
+    background-color: #fff;
+    border-radius: 50%;
+    width: .9vw;
+    height: .9vw;
+
+  }
+  &__screen {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 20vw;
+  }
+
+  &__btn {
+    --color: #{$grey};
+    --outer-size: 3vw;
+    --inner-size: 3vw;
+    --border-size: .2vw;
+    --scale: 1.3;
+  }
+}

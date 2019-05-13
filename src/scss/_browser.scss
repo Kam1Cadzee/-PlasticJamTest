@@ -1,0 +1,54 @@
+.browser {
+  background: $primary-color;
+  padding: 50px;
+  padding-bottom: 20px;
+
+  &__title {
+    color: #fffefe;
+    font-size: 1.375rem;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+
+  &__window {
+    margin: auto;
+    max-width: 40%;
+    position: relative;
+    z-index: 2;
+
+
+    &_back {
+      position: absolute;
+      max-width: 40vw;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+
+      transform: translateX(16vw);
+      &_right {
+        transform: translateX(-16vw);
+      }
+    }
+  }
+
+  .wrp {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: $primary-color;
+      opacity: .5;
+    }
+  }
+}

@@ -1,5 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import "variables";
 @import "v-grid";
+@import "text";
+@import "logo-img";
+@import "logo";
+@import "circle-button";
+@import "modal";
+@import "technology";
+@import "window";
+@import "avatar";
+
+
+
+
+@import "header";
+@import "about-us";
+@import "browser";
+@import "testimonials";
+@import "points";
+@import "footer";
+
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+html {
+  font-size: 1vw;
+}
+
+
+
 
 

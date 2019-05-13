@@ -1,0 +1,55 @@
+.testimonials {
+  background-color: #f1f1f1;
+
+  .testimonial {
+    max-width: 60%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .wrp {
+    display: flex;
+    justify-content: space-between;
+    max-width: 6vw;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  &__btn {
+    --bg-color: #fff;
+    --border-color: #aaa;
+
+    background-color: var(--bg-color);
+    border: .2vw solid var(--border-color);
+
+    border-radius: 50%;
+    padding: .6vw;
+    cursor: pointer;
+
+
+    &_active {
+      --bg-color: #{$secondary-color};
+      --border-color: #fff;
+    }
+  }
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__name {
+    font-size: 1.625rem;
+    margin: 0;
+    margin-top: 20px;
+  }
+  &__position {
+    font-size: 1.375rem;
+    margin: 0;
+
+  }
+  &__text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}

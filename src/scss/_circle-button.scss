@@ -1,0 +1,26 @@
+.circle-button-inner {
+  display: block;
+  width: var(--inner-size);
+  height: var(--inner-size);
+  fill: var(--color);
+  transform: scale(var(--scale, 1));
+
+}
+
+.circle-button {
+  --color: #000;
+  --outer-size: 40px;
+  --inner-size: 25px;
+  --border-size: 1px;
+
+  border-radius: 50%;
+  border: var(--border-size) solid var(--color);
+  width: var(--outer-size);
+  height: var(--outer-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+}

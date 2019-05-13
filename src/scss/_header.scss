@@ -1,0 +1,36 @@
+.header {
+  border-top: 5px solid $primary-color;
+  background-color: $secondary-color;
+  padding-top: 40px;
+
+  &__text {
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__title {
+    font-size: 5.1875rem;
+  }
+  &__subtitle {
+    font-size: 1.9375rem;
+    padding-bottom: 180px;
+  }
+  &__btn {
+    --color: white;
+    --outer-size: 3vw;
+    --inner-size: 2vw;
+    --border-size: .1vw;
+    &:hover {
+      --color: #{$primary-color};
+    }
+  }
+
+  .wrp {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+}
