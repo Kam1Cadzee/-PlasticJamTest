@@ -18,11 +18,18 @@
   }
   &__btn {
     --color: white;
-    --outer-size: 3vw;
-    --inner-size: 2vw;
+    --outer-size: 4vw;
+    --inner-size: 3vw;
     --border-size: .1vw;
     &:hover {
       --color: #{$primary-color};
+    }
+
+    @include media($b-md) {
+      --outer-size: 40px;
+      --inner-size: 30px;
+      --border-size: 1px;
+
     }
   }
 

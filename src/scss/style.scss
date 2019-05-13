@@ -27,7 +27,17 @@
 }
 
 html {
-  font-size: 1vw;
+  font-size: 1.3vw;
+  @include media($b-xl) {
+    font-size: 1.6vw;
+  }
+  @include media($b-lg) {
+    font-size: 1.9vw;
+  }
+  @include media($b-md) {
+    font-size: 11px;
+  }
+
 }
 
 

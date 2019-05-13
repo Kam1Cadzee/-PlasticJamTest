@@ -1,18 +1,22 @@
 .footer {
   background-color: #f1f1f1;
   padding-top: 50px;
-  padding-bottom: 20px;
 
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include media($b-lg) {
+      flex-direction: column;
+    }
   }
   &__info {
     flex: 0 0 44%;
+    margin-bottom: 30px;
   }
   &__posts {
     flex: 0 0 50%;
-    padding-left: 50px;
+    //padding-left: 50px;
     margin-right: -10%;
   }
   &__text {
@@ -32,6 +36,7 @@
   }
   .post {
     margin-bottom: 20px;
+
   }
 }
 .post {
@@ -42,6 +47,11 @@
     height: 6vw;
     min-width: 6vw;
     background-color: #fff;
+
+    @include media($b-md) {
+      height: 40px;
+      min-width: 40px;
+    }
   }
 
   .wrp {
@@ -60,7 +70,10 @@
 .share {
   border: 1px solid #000;
   border-radius: 2px;
-  margin-top: 40px;
+  margin-top: 2vw;
+  @include media($b-lg) {
+    margin-top: 20px;
+  }
 
   display: inline-flex;
 
@@ -79,8 +92,12 @@
     }
   }
   &__inner {
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    height: 2vw;
     fill: var(--color, #000);
+    @include media($b-lg) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

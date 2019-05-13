@@ -2,7 +2,7 @@
 .modal {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 45px 40px 30px 40px;
+  padding: 3vw 2vw 1.3vw 2vw;
   z-index: 100;
   background-color: #fff;
   box-sizing: border-box;
@@ -13,18 +13,20 @@
     text-align: center;
     margin: 0;
 
+
     &::after {
       content: '';
       display: block;
       height: 1px;
       background-color: #d5d5d5;
       width: 50%;
-      margin: 30px auto;
+      margin: 2vw auto;
     }
   }
 
   &__text {
     font-size: 1.375rem;
     line-height: 1.5;
+    text-indent: 20px;
   }
 }

@@ -31,6 +31,9 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 570px) {
+    .logo-img {
+      --size-logo: 40px; } }
   .logo-img::after {
     content: '';
     position: absolute;
@@ -93,7 +96,7 @@
 .modal {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 45px 40px 30px 40px;
+  padding: 3vw 2vw 1.3vw 2vw;
   z-index: 100;
   background-color: #fff;
   box-sizing: border-box; }
@@ -108,20 +111,26 @@
       height: 1px;
       background-color: #d5d5d5;
       width: 50%;
-      margin: 30px auto; }
+      margin: 2vw auto; }
   .modal__text {
     font-size: 1.375rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-indent: 20px; }
 
 .technology {
   --bg-color: #fff;
   --color: #69d2e7;
   --size: 12vw;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex: 0 1 200px; }
+  @media screen and (max-width: 570px) {
+    .technology {
+      flex-direction: row;
+      flex: 1 0 90%; } }
   .technology__outer {
     margin-bottom: 30px;
     border-radius: 10px;
@@ -135,7 +144,10 @@
     text-align: center;
     font-size: 1.5rem;
     margin: 0;
-    max-width: 70%; }
+    max-width: 80%; }
+    @media screen and (max-width: 570px) {
+      .technology__text {
+        margin-left: 20px; } }
   .technology_reverse {
     --color: #fff;
     --bg-color: #69d2e7; }
@@ -204,11 +216,16 @@
     padding-bottom: 180px; }
   .header__btn {
     --color: white;
-    --outer-size: 3vw;
-    --inner-size: 2vw;
+    --outer-size: 4vw;
+    --inner-size: 3vw;
     --border-size: .1vw; }
     .header__btn:hover {
       --color: #fa6900; }
+    @media screen and (max-width: 570px) {
+      .header__btn {
+        --outer-size: 40px;
+        --inner-size: 30px;
+        --border-size: 1px; } }
   .header .wrp {
     display: flex;
     justify-content: space-between;
@@ -228,17 +245,28 @@
     margin: auto;
     top: -40px;
     margin-bottom: 50px; }
+    @media screen and (max-width: 570px) {
+      .about-us__modal {
+        max-width: 95%;
+        padding: 20px;
+        text-align: justify; } }
   .about-us .wrp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 70%;
     margin: auto; }
+    @media screen and (max-width: 570px) {
+      .about-us .wrp {
+        max-width: 90%; } }
 
 .browser {
   background: #fa6900;
   padding: 50px;
   padding-bottom: 20px; }
+  @media screen and (max-width: 570px) {
+    .browser {
+      padding: 20px; } }
   .browser__title {
     color: #fffefe;
     font-size: 1.375rem;
@@ -246,6 +274,9 @@
     max-width: 70%;
     margin: auto;
     padding-bottom: 60px; }
+    @media screen and (max-width: 570px) {
+      .browser__title {
+        max-width: 90%; } }
   .browser__window {
     margin: auto;
     max-width: 40%;
@@ -283,12 +314,18 @@
     margin: auto;
     padding-top: 40px;
     padding-bottom: 40px; }
+    @media screen and (max-width: 570px) {
+      .testimonials .testimonial {
+        max-width: 90%; } }
   .testimonials .wrp {
     display: flex;
     justify-content: space-between;
     max-width: 6vw;
     margin: auto;
     padding-bottom: 40px; }
+    @media screen and (max-width: 570px) {
+      .testimonials .wrp {
+        max-width: 60px; } }
   .testimonials__btn {
     --bg-color: #fff;
     --border-color: #aaa;
@@ -300,6 +337,10 @@
     .testimonials__btn_active {
       --bg-color: #69d2e7;
       --border-color: #fff; }
+    @media screen and (max-width: 570px) {
+      .testimonials__btn {
+        padding: 6px;
+        border-width: 1px; } }
 
 .testimonial {
   display: flex;
@@ -321,11 +362,21 @@
   padding: 100px 0;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 570px) {
+    .points {
+      padding: 20px 0; } }
   .points__container {
     display: flex; }
+    @media screen and (max-width: 570px) {
+      .points__container {
+        align-items: center;
+        justify-content: center; } }
   .points__info {
     color: #ffffff;
     width: 50%; }
+    @media screen and (max-width: 570px) {
+      .points__info {
+        width: 80%; } }
   .points__title {
     font-size: 1.625rem;
     margin: 0; }
@@ -337,6 +388,9 @@
 
 .bg {
   position: relative; }
+  @media screen and (max-width: 570px) {
+    .bg {
+      display: none; } }
   .bg::after {
     content: '';
     display: block;
@@ -351,16 +405,18 @@
 
 .footer {
   background-color: #f1f1f1;
-  padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-top: 50px; }
   .footer__container {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 660px) {
+      .footer__container {
+        flex-direction: column; } }
   .footer__info {
-    flex: 0 0 44%; }
+    flex: 0 0 44%;
+    margin-bottom: 30px; }
   .footer__posts {
     flex: 0 0 50%;
-    padding-left: 50px;
     margin-right: -10%; }
   .footer__text {
     font-size: 1rem; }
@@ -383,6 +439,10 @@
     height: 6vw;
     min-width: 6vw;
     background-color: #fff; }
+    @media screen and (max-width: 570px) {
+      .post__img {
+        height: 40px;
+        min-width: 40px; } }
   .post .wrp {
     padding-left: 2vw; }
   .post__title {
@@ -394,8 +454,11 @@
 .share {
   border: 1px solid #000;
   border-radius: 2px;
-  margin-top: 40px;
+  margin-top: 2vw;
   display: inline-flex; }
+  @media screen and (max-width: 660px) {
+    .share {
+      margin-top: 20px; } }
   .share__item {
     display: flex;
     justify-content: center;
@@ -407,13 +470,26 @@
     .share__item:hover {
       --color: #fa6900; }
   .share__inner {
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    height: 2vw;
     fill: var(--color, #000); }
+    @media screen and (max-width: 660px) {
+      .share__inner {
+        width: 20px;
+        height: 20px; } }
 
 .container {
   max-width: 80%;
   margin: auto; }
 
 html {
-  font-size: 1vw; }
+  font-size: 1.3vw; }
+  @media screen and (max-width: 850px) {
+    html {
+      font-size: 1.6vw; } }
+  @media screen and (max-width: 660px) {
+    html {
+      font-size: 1.9vw; } }
+  @media screen and (max-width: 570px) {
+    html {
+      font-size: 11px; } }

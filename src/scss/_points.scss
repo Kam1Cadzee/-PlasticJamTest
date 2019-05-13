@@ -4,14 +4,24 @@
   position: relative;
   overflow: hidden;
 
+  @include media($b-md) {
+    padding: 20px 0;
+  }
   &__container {
     display: flex;
+    @include media($b-md) {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
 
   &__info {
     color: #ffffff;
     width: 50%;
+    @include media($b-md) {
+      width: 80%;
+    }
   }
 
   &__title {
@@ -32,6 +42,9 @@
 .bg {
   position: relative;
 
+  @include media($b-md) {
+    display: none;
+  }
   &::after {
     content: '';
     display: block;

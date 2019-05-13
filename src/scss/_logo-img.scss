@@ -1,6 +1,10 @@
 .logo-img {
   --size-logo: 4vw;
 
+  @include media($b-md) {
+    --size-logo: 40px;
+  }
+
   /*@include media($b-lg) {
     --size-logo: 200px;
   }

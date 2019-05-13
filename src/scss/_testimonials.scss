@@ -6,6 +6,10 @@
     margin: auto;
     padding-top: 40px;
     padding-bottom: 40px;
+    @include media($b-md) {
+      max-width: 90%;
+    }
+
   }
   .wrp {
     display: flex;
@@ -13,6 +17,11 @@
     max-width: 6vw;
     margin: auto;
     padding-bottom: 40px;
+
+    @include media($b-md) {
+      max-width: 60px;
+    }
+
   }
   &__btn {
     --bg-color: #fff;
@@ -29,6 +38,12 @@
     &_active {
       --bg-color: #{$secondary-color};
       --border-color: #fff;
+    }
+
+
+    @include media($b-md) {
+      padding: 6px;
+      border-width: 1px;
     }
   }
 }
